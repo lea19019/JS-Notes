@@ -13,8 +13,6 @@ const links = [
   }
 ]
 
-let itemsList =  document.querySelector('.list-link');
-
 for (let index = 0; index < links.length; index++) {
   let listItem = document.createElement('LI');
   let linkWeek = document.createElement('A');
