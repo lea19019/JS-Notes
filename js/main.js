@@ -13,7 +13,7 @@ const links = [
   }
 ]
 
-var links_list = document.getElementByClassName('list-links');
+let linksItems = document.getElementsByClassName('list-links')
 
 for (let index = 0; index < links.length; index++) {
   let listItem = document.createElement('LI');
@@ -21,7 +21,7 @@ for (let index = 0; index < links.length; index++) {
   linkWeek.setAttribute('src', links[index]['url']);
   linkWeek.innerText = links[index]['label'];
   listItem.appendChild(linkWeek);
-  links_list.appendChild(listItem);
-  console.log(links_list);
+  linksItems.appendChild(listItem);
+  console.log(linksItems);
   
 }
