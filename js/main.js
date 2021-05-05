@@ -13,7 +13,7 @@ const links = [
   }
 ]
 
-let linksItems = document.getElementsByClassName('list-links')
+let linksItems = document.getElementByClassName('list-links');
 
 for (let index = 0; index < links.length; index++) {
   let listItem = document.createElement('LI');
