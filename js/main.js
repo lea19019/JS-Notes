@@ -13,12 +13,14 @@ const links = [
   }
 ]
 
+let ol = document.querySelector('.list-links');
+
 for (let index = 0; index < links.length; index++) {
   let listItem = document.createElement('LI');
   let linkWeek = document.createElement('A');
   linkWeek.setAttribute('href', links[index]['url']);
   linkWeek.innerText = links[index]['label'];
   listItem.appendChild(linkWeek);
-
-  document.querySelector('.list-links').appendChild(listItem);
+  ol.appendChild(listItem);
+ // document.querySelector('.list-links').appendChild(listItem);
 }
