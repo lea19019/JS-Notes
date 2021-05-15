@@ -10,6 +10,10 @@ const links = [
   {
     label: "Week 03 notes",
     url: "week3/index.html"
+  },
+  {
+    label: "Week 04 notes",
+    url: "week4/index.html"
   }
 ]
 
@@ -22,5 +26,5 @@ for (let index = 0; index < links.length; index++) {
   linkWeek.innerText = links[index]['label'];
   listItem.appendChild(linkWeek);
   ol.appendChild(listItem);
- // document.querySelector('.list-links').appendChild(listItem);
+  // document.querySelector('.list-links').appendChild(listItem);
 }
