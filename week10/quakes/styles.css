@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    background-color: aliceblue;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    color: rgb(160, 160, 160);
+}
+
+#quakeList {
+    padding: 0;
+    margin: 0 auto;
+    list-style-type: none;
+    width: fit-content;
+    border-radius: 2rem;
+    background-color: rgb(202, 202, 202);
+}
+
+#quakeList li {
+    padding: .75rem 1.5rem;
+}
