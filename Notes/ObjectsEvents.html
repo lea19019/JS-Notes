@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="../css/navStyles.css">
+    <script type="module" src="../js/nav.js"></script>
+    <title>Objects and Events</title>
+</head>
+
+<body>
+    <nav class="menu-area"></nav>
+    <main>
+        <h1>Objects and Events</h1>
+        <h2>Notes on my reading of the chapters Objects, Document Object Model, and Events from the book JavaScript:
+            Novice to Ninja, 2nd Edition.</h2>
+        <hr>
+        <div class="notes-content">
+            <h3> This </h3>
+            <p> Actions are represented in JavaScript by functions in properties. <br>
+                To access the object, a method can use the this keyword.
+                <b>'this'</b> represents the object. <br>
+                The value of this is defined at run-time.
+                <ul>
+                    <li>When a function is declared, it may use this, but that this has no value until the function is
+                        called.</li>
+                    <li>A function can be copied between objects.</li>
+                    <li>When a function is called in the “method” syntax: object.method(), the value of this during the
+                        call is object.
+                    </li>
+                </ul>
+                Please note that arrow functions are special: they have no this. When this is accessed inside an arrow
+                function, it is taken from outside.
+            </p>
+
+
+            <h3>Objects </h3>
+            <p>
+                An object in JavaScript is a self-contained set of related values and functions. They act as a
+                collection of
+                named properties that map to any JavaScript value such as strings, numbers, booleans, arrays and
+                functions.
+                If a property’s value is a function, it is known as a method. <br>
+
+                All objects are mutable at any time when a program is running. This means that its properties and
+                methods
+                can be changed or removed, and new properties and methods can be added to the object, even if it was
+                declared using const. <br>
+
+                Objects Literals are declared:
+            </p>
+
+            <code>const object_name = {};</code>
+
+            <p>
+                <b>Computed properties</b>, this means that JavaScript code can be placed inside square brackets and the
+                property key will be the return value of that code <br>
+
+                <b>Object.key()</b> returns an array with all the keys of an object <br>
+                <b>Object.value()</b> returns an array with all the values of an object <br>
+                <b>Object.entries()</b> returns an array with all the key and values of an object <br>
+
+                <b>The parse()</b> method takes a string of data in JSON format and returns a JavaScript object
+
+                <b>The stringify()</b> method does the opposite, taking a JavaScript object and returning a string of
+                JSON data, as can be seen in the example:
+
+                <b>A regular expression</b> (or RegExp, for short) is a pattern that can be used to search strings for
+                matches to the pattern.
+            </p>
+            <h3>The Document Object Model </h3>
+            <p>
+                The Document Object Model, or DOM for short, represents an HTML document as a network of connected nodes
+                that form a tree-like structure. <br>
+                The DOM treats everything as a node. <br>
+                You can check the type of a node with nodeType: </p>
+            <code>
+                const body = document.body;
+                body.nodeType;
+                // 1
+            </code>
+            <table>
+                <tr>
+                    <th>Code</th>
+                    <th>Type</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Element</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Attribute</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Text</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Comment</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Body</td>
+                </tr>
+            </table>
+            <p>You can also find the name:</p>
+            <code>
+                body.nodeName; <br>
+                //"BODY"
+            </code>
+            <p>
+                When you get elements by id you are referencing that element, you have access to several functions, like
+                appendChild. <br>
+                This is because the idea of id's is that there should be unique. <br>
+
+                You don't have for example the appendChild property on getElementsByClassName, this is because you are
+                returning a live node list of all elements, which is not the same as referencing the element as with
+                getElementById.
+            </p>
+            <h3>Query Selectors</h3>
+            <p>
+                The document.querySelector() method allows you to use CSS notation to find the first element in the
+                document that matches a CSS selector provided as an argument. If no elements match, it will return null.
+                <br>
+                The document.querySelectorAll() method also uses CSS notation but returns a node list of all the
+                elements in the document that match the CSS query selector. If no elements match, it will return an
+                empty node list. <br>
+                They are also very powerful because the will return the reference to the element as the getElementById
+                does, but this time you can use any CSS property syntax to identify it. <br>
+                There are also some properties like removeChild and replaceChild similar to what appendChild does
+            </p>
+            <h3>Updating CSS </h3>
+            <p>
+                You need to select the node and then use the . operator to access 'styles'. Inside there you can start
+                making modifications. <br>
+                Any CSS property names that are separated by dashes must be written in camelCase notation, so the dash
+                is removed and the next letter is capitalized because dashes are not legal characters in property names.
+            </p>
+            <code>
+                superman.style.backgroundColor = 'blue'; //superman is a node <br>
+                // "blue"
+            </code>
+            <p>
+                Or you can also use the bracket notation to select the CSS property:
+            </p>
+            <code>
+                superman.style['background color'] = 'blue'; //bracket notaion used here
+                // "blue"
+            </code>
+            <h3>Disappearing Act</h3>
+            <p>
+                One particularly useful CSS property often employed is the display property. This can be used to make
+                elements disappear and reappear on the page as needed:
+            </p>
+            <code>
+                superman.style.display = 'none';
+                // "none"
+            </code>
+            <p>
+                The element can be made to reappear by changing the display property back to block: </p>
+            <code>
+                superman.style.display = 'block';
+                // "block"
+            </code>
+            <h3>Events</h3>
+            <p>
+                Events are another part of the DOM and they are what provides the link between the web page and user
+                interactions. <br>
+
+                You can place event listeners on your nodes that will fire the code to do something, an example would
+                be:
+            </p>
+            <code>
+                document.body.addEventListener("click", doSomething);
+            </code>
+            <p>
+                The recommended way of dealing with events, and the current standard, is to use event listeners. <br>
+                The addEventListener() method is called on a node object, the node to which the event listener is being
+                applied. For example, this code will attach an event listener to the document’s body:
+            </p>
+            <code>
+                document.body.addEventListener('click',doSomething);
+            </code>
+            <p>
+                Whenever an event handler is triggered by an event, the callback function is called. This function is
+                automatically passed an event object as a parameter that contains information about the event. <br>
+
+
+                Website with a list of all types of events <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/Events">link</a> </p>
+
+        </div>
+    </main>
+</body>
+
+</html>

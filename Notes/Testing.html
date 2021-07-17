@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="../css/navStyles.css">
+    <script type="module" src="../js/nav.js"></script>
+    <title>Testing and Debugging</title>
+</head>
+
+<body>
+    <nav class="menu-area"></nav>
+    <main>
+        <h1>Testing and Debugging</h1>
+        <h2>Notes on my reading of the chapter Testing and Debugging from the book JavaScript:
+            Novice to Ninja, 2nd Edition.</h2>
+        <hr>
+        <div class="notes-content">
+            <h3>Testing and Debugging</h3>
+            <p>Errors and bugs are a fact of life in programming - they will always be there.</p>
+
+            <h3>Errors</h3>
+            <p>
+                Errors are caused when something goes wrong in a program. They are usually caused by one of the
+                following:
+                <ul>
+                    <li>System error ― there’s a problem with the system or external devices with which the program is
+                        interacting.</li>
+                    <li>Programmer error ― the program contains incorrect syntax or faulty logic; it could even be as
+                        simple
+                        as a
+                        typo.</li>
+                    <li>User error ― the user has entered data incorrectly, which the program is unable to handle</li>
+                </ul>
+
+                Programmer errors are our responsibility, so we must ensure they are minimized as much as possible and
+                fixed
+                promptly. We also should try to limit user errors by predicting any possible interactions that may throw
+                an
+                error, and ensure they are dealt with in a way that doesn’t negatively affect the user experience. <br>
+
+                An exception is an error that produces a return value that can then be used by the program to deal with
+                the
+                error. For example, trying to call a method that is nonexistent will result in a reference error that
+                raises an
+                exception. <br>
+
+                An exception will also produce a stack trace. This is a sequence of functions or method calls that lead
+                to the
+                point where the error occurred. </p>
+
+            <h3>Warnings</h3>
+            <p>A warning can occur if there’s an error in the code that isn’t enough to cause the program to crash.</p>
+
+            <h3>Strict Mode</h3>
+            </p>
+            ECMAScript 5 introduced a strict mode that produces more exceptions and warnings and prohibits the use of
+            some
+            deprecated features. This is due to the fact that strict mode considers coding practices that were
+            previously
+            accepted as just being “poor style” as actual errors. <br>
+
+            To start using strict mode you just have to add
+            </p>
+            <code>'use strict';</code>
+            <p>
+                This will be picked up by any JavaScript engine that uses strict mode. If the engine does not support
+                strict
+                mode, this string will simply be ignored.
+            </p>
+            <h3>Error Objects</h3>
+            <ul>
+                <li><b>RangeError</b> is thrown when a number is outside an allowable range of values.</li>
+                <li><b>ReferenceError</b> is thrown when a reference is made to an item that doesn’t exist. For example,
+                    calling a
+                    function that hasn’t been defined.</li>
+                <li><b>SyntaxError</b> is thrown when there’s an error in the code’s syntax.</li>
+                <li><b>TypeError</b> is thrown when there’s an error in the type of value used; for example, a string is
+                    used when a number is expected.</li>
+                <li><b>URIError</b> is thrown when there’s a problem encoding or decoding the URI.</li>
+                <li><b>InternalError</b> is a non-standard error that is thrown when an error occurs in the JavaScript
+                    engine. A common cause of this is too much recursion.</li>
+            </ul>
+
+            <h3>Tests</h3>
+            <p>
+                Testing is an important part of programming that can often be overlooked. Writing good tests means your
+                code
+                will be less brittle as it develops, and any errors will be identified early on. <br>
+
+                Test-driven development(TDD) is the process of writing tests before any actual code. Obviously these
+                tests will
+                initially fail, because there is no code to test. The next step is to write some code to make the tests
+                pass.
+                After this, the code is refactored to make it faster, more readable, and remove any repetition. The code
+                is
+                continually tested at each stage to make sure it continues to work. This process should be followed in
+                small
+                piecemeal chunks every time a new feature is implemented, resulting in the following workflow:
+            </p>
+            <ol>
+                <li>Write tests (that initially fail)</li>
+                <li>Write code to pass the tests</li>
+                <li>Refactor the code</li>
+                <li>Test refactored code</li>
+                <li>Write more tests for new features</li>
+            </ol>
+        </div>
+    </main>
+</body>
+
+</html>

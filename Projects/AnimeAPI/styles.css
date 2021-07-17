@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Shojumaru&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 90%;
+    font-family: 'Bangers', cursive;
+    background-color: #737c81;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Shojumaru', cursive;
+}
+
+main {
+    margin: 0 auto;
+    width: 65%;
+    text-align: center;
+}
+
+#randomAnime {
+    margin: 2rem;
+    padding: 1rem 1.5rem;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.603);
+    border-radius: 12px;
+}
+
+#charactersQuotes div {
+    margin: 2rem;
+    padding: 1rem 1.5rem;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.603);
+    border-radius: 12px;
+}

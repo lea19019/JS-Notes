@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="../css/navStyles.css">
+    <script type="module" src="../js/nav.js"></script>
+    <title>Object Oriented Programming</title>
+</head>
+
+<body>
+    <nav class="menu-area"></nav>
+    <main>
+        <h1>Object Oriented Programming</h1>
+        <h2>Notes on my reading of the chapter Object Oriented Programming from the book JavaScript:
+            Novice to Ninja, 2nd Edition.</h2>
+        <hr>
+        <div class="notes-content">
+            <h3>Object Oriented Programming in JavaScript</h3>
+            <p>
+                The static keyword can be used in class declarations to create a static method. A static method is
+                called by the
+                class directly rather than by instances of the class. <br>
+
+                Creating an instance is to create an object with the class data. <br> <br>
+
+                What is the difference of class declarations and constructor functions? <br>
+
+                By default, an object’s methods are public in JavaScript. Methods and properties are said to be public
+                because
+                they can be queried directly and changed by assignment. The dynamic nature of the language means that an
+                object’s properties and methods can be changed after it has been created. <br> <br>
+
+                What is the prototype of the Object()? <br>
+
+                Properties of objects in JavaScript are said to be enumerable or non-enumerable. If they aren’t
+                enumerable, this
+                means they will not show up when a for-in loop is used to loop through an object’s properties and
+                methods. <br>
+
+                The concept of polymorphism means that different objects can have the same method, but implement it in
+                different
+                ways. Polymorphism means that objects are able to override this method with a more specific
+                implementation. <br> <br>
+
+                A mixin is a way of adding properties and methods of some objects to another object without using
+                inheritance.
+                It allows more complex objects to be created by ‘mixing’ basic objects together. <br> <br>
+
+                When objects are copied by assignment, they are only copied by reference. This means that another object
+                is not
+                actually created in memory; the new reference will just point to the old object. Any changes that are
+                made to
+                either objects will affect both of them. Arrays and functions are objects, so whenever they’re copied by
+                assignment they will just point to the same object. And when one changes, they all change. This is known
+                as
+                making a shallow copy of an object. A deep or hard copy will create a completely new object that has all
+                the
+                same properties as the old object. The difference is that when a hard copy is changed, the original
+                remains the
+                same. But when a shallow copy is changed, the original changes too. <br>
+            </p>
+        </div>
+    </main>
+</body>
+
+</html>

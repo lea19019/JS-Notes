@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="../css/navStyles.css">
+    <script type="module" src="../js/nav.js"></script>
+    <title>The Window Object and HTML5 APIs</title>
+</head>
+
+<body>
+    <nav class="menu-area"></nav>
+    <main>
+        <h1>The Window Object and HTML5 APIs</h1>
+        <h2>Notes on my reading of the chapters The Window Object, and HTML5 APIs from the book JavaScript:
+            Novice to Ninja, 2nd Edition.</h2>
+        <hr>
+        <div class="notes-content">
+            <h3>The Window Object</h3>
+            <p>
+                Every JavaScript environment has a global object. Any variables that are created in the global scope are
+                actually properties of this object, and any functions are methods of it. In a browser environment the
+                global
+                object is the window object, which represents the browser window that contains a web page.
+            </p>
+
+            <h3>The Browser Object Model</h3>
+            <p>
+                The Browser Object Model (or BOM for short) is a collection of properties and methods that contain
+                information
+                about the browser and computer screen. For example, we can find out which browser is being used to view
+                a
+                page
+                (though, this method is unreliable). We can also find out the dimensions of the screen it is viewed on,
+                and
+                which pages have been visited before the current page. It can also be used for the rather dubious
+                practice
+                of
+                creating pop-up windows, if you’re into annoying your users.
+            </p>
+            <h3>Browser Information</h3>
+            <p>
+                The window object has a navigator property that returns a reference to the Navigator object. The
+                Navigator
+                object contains information about the browser being used. Its userAgent property will return information
+                about
+                the browser and operating system being used.</p>
+            <code>
+                window.navigator.userAgent
+            </code>
+
+            <h3>The Browser History</h3>
+            <p>
+                The window.history property can be used to access information about any previously visited pages in the
+                current browser session. <br>
+                The window.history.length property shows how many pages have been visited before arriving at the current
+                page. <br>
+                The window.history.go() method can be used to go to a specific page, where 0 is the current page:
+            </p>
+            <code>
+                window.history.go(1); // goes forward 1 page <br>
+                window.history.go(0); // reloads the current page <br>
+                window.history.go(-1); // goes back 1 page <br>
+            </code>
+            <p>
+                There are also the window.history.forward() and window.history.back() methods that can be used to
+                navigate
+                forwards and backwards by one page respectively, just like using the browser’s forward and back buttons.
+            </p>
+            <h3>Cookies</h3>
+            <p>
+                Cookies are small files that are saved locally on a user’s computer. They were invented by Netscape as a
+                way
+                of
+                getting round HTTP being a stateless protocol. This means that a browser does not remember anything from
+                one
+                request to another. So every time a user visits a page, nothing about any previous visits is remembered.
+                Cookies
+                can be used to sidestep this problem by storing information that can then be retrieved between requests.
+            </p>
+
+            <h3>The data- Attribute</h3>
+            <p>
+                The data- attribute is a way of embedding data in a web page using custom attributes that are ignored by
+                the
+                browser. They’re also private to a page, so are not intended to be used by an external service – their
+                sole
+                purpose is to be used by a JavaScript program. This means they’re perfect for adding data that can be
+                used
+                as a
+                hook that the program utilizes to access information about a particular element on the page.
+            </p>
+            <h3>Geolocation</h3>
+            <p>
+                The Geolocation API is used to obtain the geographical position of the device. This means it can be used
+                to
+                find
+                the user’s exact location, then link to nearby places or measure the speed at which the user is moving.
+                This
+                information can then be used to filter data based on the user’s location or speed and direction of
+                travel.
+                An
+                example of this might be a search function that returns results based on your location. Because of
+                privacy
+                concerns, permission to use this has to be granted by the user first.
+            </p>
+            <h3>Web Workers</h3>
+            <p>
+                We saw in earlier chapters that JavaScript is a single-threaded language, meaning that only one process
+                can
+                run
+                at one time. Web workers allow processes to be run in the background, adding support for concurrency in
+                JavaScript. The idea is that any processes that could take a long time are carried out in the
+                background, so
+                a
+                website will continue to function without fear of the dreaded 'script has become unresponsive' message
+                that
+                occurs when a script runs for too long, shown below.
+
+                Web workers allow computationally complex operations to be performed in a separate thread, meaning that
+                the
+                flow
+                of a program won’t suffer interruptions, and an application will not freeze or hang. They are a useful
+                feature
+                that help to keep sites responsive, even when complicated operations are being carried out.
+            </p>
+            <h3>Websockets</h3>
+            <p>
+                Websocket is a new protocol that allows two-way communication with a server – also known as push
+                messaging.
+                This
+                means that a connection is kept open and responses are ‘pushed’ to the client as soon as they are
+                received.
+            </p>
+        </div>
+    </main>
+</body>
+
+</html>

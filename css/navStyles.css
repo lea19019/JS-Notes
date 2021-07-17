@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nixie+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-area a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(216, 24, 24);
+    background: rgb(255, 248, 238);
+    padding: 5px 0;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.menu-area a:hover {
+    background: tomato;
+    color: #fff;
+
+}
+
+.menu-area ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu-area li {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-area li:hover .dropdown-1>li {
+    display: block;
+    top: 0;
+}
+
+.menu-area li:hover .dropdown-2>li {
+    display: block;
+    top: 0;
+}
+
+.dropdown-1 li {
+    display: none;
+    position: relative;
+}
+
+.dropdown-1 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dropdown-2 li {
+    display: none;
+    position: relative;
+}
+
+.dropdown-2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

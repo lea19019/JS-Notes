@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap');
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+h1 {
+    padding: 1rem 0 .5rem 0;
+    color: rgb(216, 24, 24);
+    font-family: 'Bellota Text', cursive;
+    text-align: center;
+}
+
+h2 {
+    margin: 0 auto;
+    width: 90%;
+    font-family: 'Bellota Text', cursive;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0 0 .5rem 0;
+    color: rgb(156, 156, 156);
+}
+
+hr {
+    width: 75%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: 'Bellota Text', cursive;
+    margin: 1rem 0;
+}
+
+.notes-content {
+    margin: 2rem 0;
+}
+
+.notes-content ul,
+ol {
+    padding-left: 2rem;
+}
+
+p {
+    margin: 1rem 0;
+}

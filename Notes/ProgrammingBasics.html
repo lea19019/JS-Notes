@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="../css/navStyles.css">
+    <script type="module" src="../js/nav.js"></script>
+    <title>Programming Basics</title>
+</head>
+
+<body>
+    <nav class="menu-area"></nav>
+    <main>
+        <h1>Programming Basics</h1>
+        <h2>Notes related to my reading on the chapters Programming Basics, Arrays, Logic and Loops, and Functions from
+            the book JavaScript: Novice to Ninja, 2nd Edition.</h2>
+        <hr>
+        <div class="notes-content">
+            <p>
+                Low-level programming languages are assembly language or machine code. <br>
+                High-level programming languages are C, C++ and Java. <br>
+                Scripting languages, they are also high-level, but they are translated into machine code at run time.
+                <br>
+                Well commented code is the hallmark of a ninja programmer: <br>
+            </p>
+            <code>
+                // Inline comments <br>
+                /* <br>
+                Multi line comments <br>
+                */
+            </code>
+            <p> A block is a series of statements that are collected together inside curly braces: </p>
+            <code>
+                { <br>
+                //statement 1 <br>
+                //statement 2 <br>
+                }
+            </code>
+            <p>
+                An operator applies an operation to a value. <br>
+                Variables are used in programming languages to refer to a value stored in memory. <br>
+                You can even declare and assign multiple variables at the same time if you separate them with commas:
+            </p>
+            <code>
+                let x = 3, y = 4, z = 5;
+            </code>
+            <p>
+                When declaring variables if you declare a variable and you redeclare a variable with the same name
+                without using let or const you will make it global variable.</p>
+            <code>
+                Const variable = 5; <br>
+                {<br>
+                Variable = 6;<br>
+                }<br>
+                alert(variable)<br>
+                // 6 will be printed
+            </code>
+            <p>
+                The best convention to follow on naming in JavaScript is with Camel case. <br>
+
+                if you assign a non-primitive value to a variable, then this is done by reference, so any changes that
+                are
+                subsequently made will affect all references to that object:</p>
+            <code>
+                const c = { value: 1 }; <br>
+
+                let d = c; // c.value = 1, d.value = 1 <br>
+
+                d.value = 2; // c.value = 2, d.value = 2
+            </code>
+
+
+            <h3> Template Literals </h3>
+            <p>
+                They also allow interpolation of JavaScript code. This means that a JavaScript expression can be
+                inserted
+                inside a string and the result will be displayed, as can be seen in the examples below: </p>
+            <code>
+                const name = `Siri`; <br>
+                `Hello ${ name }!`; <br>
+                // 'Hello Siri!' <br>
+                const age=39; <br>
+                `I will be ${ age + 1 } next year`; <br>
+                // 'I will be 40 next year'
+            </code>
+
+
+            <h3> NaN means Not a Numbers! </h3>
+            <p>
+                Type coercion happens when the operands of an operator are of different types.
+            </p>
+
+            <h3> Delete array</h3>
+            <p>
+                Deleting on arrays that way will delete the value inside but if not the space, so if you try to call it,
+                it will return undefined.
+            </p>
+
+            <h3>Destructuring </h3>
+            <p>
+                Destructuring an array is the concept of taking values out of an array and presenting them as individual
+                values. <br>
+
+                Destructuring allows us to assign multiple values at the same time, using arrays: </p>
+            <code>
+                const [x,y] = [1,2];
+            </code>
+
+            <h3> Spread Operator </h3>
+            <p> The spread operator is three dots, ... that are placed in front of an array, with the effect of
+                spreading
+                out the elements of that array. This can be used to spread the elements of two arrays and put them
+                together
+                in a new array, like so: </p>
+            <code>
+                avengers = [ ...avengers, ...['Hulk','Hawkeye', 'Black
+                ➥ Widow'] ];
+                // ['Captain America', 'Iron Man', 'Thor', 'Hulk',
+                ➥ 'Hawkeye', 'Black Widow']
+            </code>
+            <p>
+                I love Sets! <br>
+                A set is a data structure that represents a collection of unique values, so it cannot include any
+                duplicate values. <br>
+                An empty set is created using the new operator and Set() constructor:</p>
+            <code>
+                const list = new Set();
+            </code>
+            <p>
+                A memory leak occurs when a program retains references to values that can no longer be accessed in its
+                memory. This means that memory is being used to store values that are no longer required by the program,
+                effectively wasting system resources. </p>
+            <h3>Maps</h3>
+            <p> An empty map object can be created using the new operator and Map() constructor:</p>
+            <code>
+                const romanNumerals = new Map();
+            </code>
+
+            <h3> Ternary Operator </h3>
+            <p>
+                A shorthand way of writing an if ... else statement is to use the ternary operator, ?, which takes three
+                operands in the following format:</p>
+
+            <code> condition ? (//code to run if condition is true) : (//code to run if condition is false) </code>
+            <p>
+                The ternary operator can make your code more succinct, but can also make it harder to read, so think
+                carefully before using it. <br>
+
+                Something I often hear is that I need to make my code as readable as possible, both for me and for those
+                who
+                will read my code. <br>
+
+                ES6 introduced an improved iterator function for arrays called a for-of loop that uses a slightly
+                different
+                syntax:</p>
+            <code>
+                for(const value of avengers){ console.log(value); } <br>
+                // 'Black Widow' <br>
+                // 'Captain America' <br>
+                // 'Hawkeye' <br>
+                // 'Iron Man' <br>
+                // 'Quicksilver' <br>
+                // 'Scarlet Witch' <br>
+            </code>
+            <p>
+                I use to hate these for loops… such in what mistake I was… <br>
+
+                Page 126 explains how to loop over maps</p>
+
+            <h3> REMEMBER THIS! </h3>
+            <p>
+                Don’t Repeat Yourself, or DRY, is a principle of programming that specifies that every part of a program
+                should only be written once. <br>
+                This avoids duplication and means there’s no need to keep multiple pieces
+                of code up to date and in sync. <br>
+
+                If too many arguments are provided when a function is invoked, the function will work as normal and the
+                extra arguments will be ignored. </p>
+
+            <h3> Rest Operator </h3>
+            <p>
+                A much better option is to use the rest operator. This was introduced in ES6 and can be used to deal
+                with
+                multiple arguments by creating an array of arguments that are available inside the body of the function.
+                To
+                use the rest operator, simply place three dots in front of the last parameter in a function declaration.
+                This will then collect all the arguments entered into an array.
+            </p>
+            <code>
+                function rest(...args){ <br>
+                for(arg of args){ <br>
+                console.log(arg); <br>
+                }<br>
+                }<br>
+                <br>
+                rest(2,4,6,8);<br>
+                // 2<br>
+                // 4<br>
+                // 6<br>
+                // 8<br>
+            </code>
+
+            <h3> Function Hoisting </h3>
+            <p>
+                Hoisting is the JavaScript interpreter’s action of moving all variable and function declarations to the
+                top
+                of the current scope, regardless of where they are defined. Functions that are defined using a function
+                declaration are automatically hoisted, meaning they can be invoked before they have been defined.
+            </p>
+
+            <h3> Callbacks </h3>
+            <p>
+                This means that functions can also be given as a parameter to another function. A function that is
+                passed as
+                an argument to another is known as a callback. <br>
+
+                A callback is a function that is provided as an argument to another function. <br>
+
+                The various iterator functions can be used in combination to create some powerful transformations of
+                data
+                stored in arrays. This is achieved by a process called chaining methods together.</p>
+            <code>
+                [1,2,3].map( x => x*x ).reduce((acc,x) => acc + x );<br>
+                // 14
+
+            </code>
+        </div>
+    </main>
+</body>
+
+</html>

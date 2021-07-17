@@ -1,0 +1,28 @@
+{
+  "name": "js-portfolio",
+  "version": "1.0.0",
+  "description": "Notes and exercises of Adrian Castillo during his journey learning JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jwtdb": "json-server --watch ./Projects/JWToken/json-server/database.json",
+    "jwt": "node ./Projects/JWToken/json-server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lea19019/WDD330-Portfolio.git"
+  },
+  "keywords": [
+    "JavaScript"
+  ],
+  "author": "Adrian Castillo",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.15.0",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "bugs": {
+    "url": "https://github.com/lea19019/WDD330-Portfolio/issues"
+  },
+  "homepage": "https://github.com/lea19019/WDD330-Portfolio#readme"
+}
