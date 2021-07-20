@@ -1,77 +1,77 @@
 export const noteLinks = [
     {
         label: "Mobile UX",
-        url: "/Notes/MobileUX.html"
+        url: "/JS-Journey/Notes/MobileUX.html"
     },
     {
         label: "Programming Basics",
-        url: "/Notes/ProgrammingBasics.html"
+        url: "/JS-Journey/Notes/ProgrammingBasics.html"
     },
     {
         label: "Objects and Events",
-        url: "/Notes/ObjectsEvents.html"
+        url: "/JS-Journey/Notes/ObjectsEvents.html"
     },
     {
         label: "Object Oriented Programming",
-        url: "/Notes/OOP.html"
+        url: "/JS-Journey/Notes/OOP.html"
     },
     {
         label: "Testing and Debugging",
-        url: "/Notes/Testing.html"
+        url: "/JS-Journey/Notes/Testing.html"
     },
     {
         label: "AJAX and Functions",
-        url: "/Notes/AJAXFunctions.html"
+        url: "/JS-Journey/Notes/AJAXFunctions.html"
     },
     {
         label: "Animations",
-        url: "/Notes/Animations.html"
+        url: "/JS-Journey/Notes/Animations.html"
     },
     {
         label: "The Window Object and HTML5 APIs",
-        url: "/Notes/WindowHTML.html"
+        url: "/JS-Journey/Notes/WindowHTML.html"
     },
     {
         label: "Validating forms and Using Fetch",
-        url: "/Notes/Fetch.html"
+        url: "/JS-Journey/Notes/Fetch.html"
     },
 ]
 
 export const projectLinks = [
     {
         label: "Anime Apis",
-        url: "/Projects/AnimeAPI/index.html"
+        url: "/JS-Journey/Projects/AnimeAPI/index.html"
     },
     {
         label: "Drums",
-        url: "/Projects/Drums/index-START.html"
+        url: "/JS-Journey/Projects/Drums/index-START.html"
     },
     {
         label: "Heros",
-        url: "/Projects/Heros/hero.html"
+        url: "/JS-Journey/Projects/Heros/hero.html"
     },
     {
         label: "Hikes",
-        url: "/Projects/Hikes/hiking-complete.html"
+        url: "/JS-Journey/Projects/Hikes/hiking-complete.html"
     },
     {
         label: "Quakes",
-        url: "/Projects/Quakes/index.html"
+        url: "/JS-Journey/Projects/Quakes/index.html"
     },
     {
         label: "Swapi",
-        url: "/Projects/SWAPI/swapi.html"
+        url: "/JS-Journey/Projects/SWAPI/swapi.html"
     },
     {
         label: "Tic Tac Toe",
-        url: "/Projects/TicTacToe/tictactoe.html"
+        url: "/JS-Journey/Projects/TicTacToe/tictactoe.html"
     },
     {
         label: "Array Practice",
-        url: "/Projects/ArrayPractice.html"
+        url: "/JS-Journey/Projects/ArrayPractice.html"
     },
     {
         label: "Forms practice",
-        url: "/Projects/FormsPractice.html"
+        url: "/JS-Journey/Projects/FormsPractice.html"
     }
 ]
