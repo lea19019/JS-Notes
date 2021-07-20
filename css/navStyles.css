@@ -1,71 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nixie+One&display=swap');
 
-* {
+#menu-area {
+    margin-top: 1rem;
+}
+
+#menu-area ul {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#menu-area a {
+    display: grid;
+    align-items: center;
+    font-family: 'Nanum Gothic';
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    padding: .7rem 1rem;
+    border-radius: 15px;
+}
+
+#menu-area a:hover {
+    background: tomato;
+    color: #fff;
+}
+
+#menu-area button {
+    font-family: 'Nanum Gothic';
+    font-size: 1rem;
+    background-color: transparent;
+    padding: .7rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+}
+
+#menu-area button:hover {
+    background: tomato;
+    color: #fff;
+}
+
+.menu-area {
+    margin-top: 1rem;
+}
+
+.menu-area ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .menu-area a {
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: center;
-    color: rgb(216, 24, 24);
-    background: rgb(255, 248, 238);
-    padding: 5px 0;
-    font-family: 'Nanum Gothic', sans-serif;
-    font-weight: bold;
+    font-family: 'Nanum Gothic';
+    font-size: 1rem;
     text-decoration: none;
-
+    color: black;
+    padding: .7rem 1rem;
+    border-radius: 15px;
 }
 
 .menu-area a:hover {
     background: tomato;
     color: #fff;
-
 }
 
-.menu-area ul {
-    list-style: none;
-    display: flex;
+.menu-area button:hover {
+    background: tomato;
+    color: #fff;
 }
 
-.menu-area li {
-    position: relative;
-    width: 100%;
-    text-align: center;
-}
+@media only screen and (min-width: 600px) {
+    #menu-area {
+        margin-right: 3rem;
+    }
 
-.menu-area li:hover .dropdown-1>li {
-    display: block;
-    top: 0;
-}
-
-.menu-area li:hover .dropdown-2>li {
-    display: block;
-    top: 0;
-}
-
-.dropdown-1 li {
-    display: none;
-    position: relative;
-}
-
-.dropdown-1 {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.dropdown-2 li {
-    display: none;
-    position: relative;
-}
-
-.dropdown-2 {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    .menu-area {
+        margin-right: 3rem;
+    }
 }

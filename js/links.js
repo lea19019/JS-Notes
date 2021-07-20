@@ -39,10 +39,6 @@ export const noteLinks = [
 
 export const projectLinks = [
     {
-        label: "To Do App",
-        url: "/Projects/TodoApp/index.html"
-    },
-    {
         label: "Anime Apis",
         url: "/Projects/AnimeAPI/index.html"
     },
