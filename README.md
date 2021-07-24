@@ -1,9 +1,9 @@
 # JS Journey Overview
 
-It was around January 2020 when I had my first contact with JavaScript, I wrote several exercises to helped me undestand general Programming concepts
-such as for loops, data types, logical operators, etc. I remember thinking JS was a lot easier than C++ (which was the firs language I was learned), but 
-due to my curriculum I sttoped my JS learning on those months. It wasn't until April of 2021 I continued my journey learning this wonderful language, this
-repository contains notes, projects and examples I wrote during my JS journey. Hopefully you can find something useful here! 😁
+It was around January 2020 when I had my first contact with JavaScript, I wrote several exercises to help me undestand general programming concepts
+such as for loops, data types, logical operators, etc. I remember thinking JS was a lot easier than C++ (the firs language I learned), but 
+due to my curriculum I sttoped my JS learning on those months. It wasn't until April 2021 I continued my journey learning this wonderful language, this
+repository contains notes, projects and examples I wrote during my learning. Hopefully you can find something useful here!
 
 [JS Journey](https://lea19019.github.io/JS-Journey/)
 
@@ -18,7 +18,7 @@ The first one is a To Do App that will allow the user to create, read, update an
 The second one is Country Mania which is build following the MVC architecture, I created its own repository and you'll find the link here too.
 
 * [Country Mania](https://lea19019.github.io/CountryMania/)
-* [CM Repository](https://github.com/lea19019/CountryMania)
+* [Country Mania Repository](https://github.com/lea19019/CountryMania)
 
 # Development Environment
 
