@@ -15,11 +15,6 @@ The first one is a To Do App that will allow the user to create, read, update an
 
 [To Do App](https://lea19019.github.io/JS-Journey/TodoApp/)
 
-The second one is Country Mania which is build following the MVC architecture, I created its own repository and you'll find the link here too.
-
-* [Country Mania](https://lea19019.github.io/CountryMania/)
-* [Country Mania Repository](https://github.com/lea19019/CountryMania)
-
 # Development Environment
 
 * Visual Studio Code
